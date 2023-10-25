@@ -6,10 +6,7 @@ body{
     font-size: 1.4rem;
 }
 .mainImg{
-    width: 50%;
-}
-.mainImg2{
-    width: 60%;
+    width: 600px;
 }
 figure{
     text-align: center;
