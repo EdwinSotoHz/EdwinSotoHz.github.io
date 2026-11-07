@@ -1,96 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página personal en GitHub</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Edwin Salvador Soto Hernandez · Software & Infrastructure Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="parentColumn" style="--clr:#00ff00">
-            <div class="column">
-                <h1>¿Quién soy?</h1>
-                <p>
-                    Me llamo Edwin Salvador Soto Hernández, tengo 18 años, soy un estudiante del Instituto Tecnológico Superior del Occidente del Estado de Hidalgo en la Ingeniería en Tecnologías de la Información y Comunicaciones (TIC's), creo que es fascinante cómo la búsqueda de conocimiento ayuda a resolver problematicas mediante fórmulas matemáticas y algoritmos, revelando soluciones ingeniosas que impulsan el progreso tecnológico.
-                </p>
-                <figure>
-                    <img src="imgs/fotoA.jpg" class="mainImg" alt="">
-                </figure>
-                <span></span>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <span class="brand"></span>
+            <div class="nav-links">
+                <a href="#about" id="nav-about">About me</a>
+                <a href="#projects" id="nav-projects">Projects</a>
+                <a href="#skills" id="nav-skills">Skills</a>
+                <a href="#credentials" id="nav-credentials">Credentials</a>
+                <a href="#experience" id="nav-experience">Experience</a>
             </div>
+            <div class="lang" title="Change language"><span>ES</span><span class="on">EN</span></div>
         </div>
-        <div class="parentColumn" style="--clr:#ffff00">
-            <div class="column">
-                <h1>¿Por qué estudio TIC's?</h1>
-                <p>
-                    Decidí entrar a la carrera de TIC's porque me apasiona la tecnología y su capacidad para transformar el mundo, mientras que la especialización como Full Stack me permitiría comprender y crear soluciones integrales. Además, esta elección ofrece oportunidades laborales bien remuneradas en un campo de alta demanda, lo que me brinda estabilidad financiera y la posibilidad de alcanzar mis metas personales y económicas a largo plazo.
-                </p>
-                <figure>
-                    <img src="imgs/tics.jpg" class="mainImg" alt="Ciudad inteligente futurista">
-                    <figcaption>
-                        <a href="https://www.freepik.es/foto-gratis/ciudad-inteligente-futurista-tecnologia-red-global-5g_13463111.htm#query=tics&position=44&from_view=search&track=sph">Imagen de rawpixel.com</a> en Freepik
-                    </figcaption>
-                </figure>
-                <span></span>
+    </nav>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section id="about" class="hero">
+            <div class="hero-profile">
+                <img class="avatar" alt="Edwin Salvador Soto Hernandez" src="">
+                <div class="profile-name"></div>
             </div>
-        </div>
-        <div class="parentColumn" style="--clr:#ff0d0d">
-            <div class="column">
-                <h1>De donde vengo</h1>
-                <p>
-                    Soy originario del municipio Cadereyta de Montes del estado de Querétaro. Sin embargo, en la actualidad, mi hogar se encuentra en Tlahuelilpan, Hidalgo. Tlahuelilpan es una localidad ubicada en el estado de Hidalgo, en el centro de México, llevo viviendo aquí dos años, en este estado he terminado mis estudios de nivel medio superior y  ahora estudio en el ITSOEH para ser Ingeniero en Tecnologías de la Información y Comunicaciones.
-                </p>
-                <figure>
-                    <img src="imgs/tlahue.jpg" class="mainImg" alt="">
-                </figure>
-                <span></span>
+            <div class="hero-content">
+                <div class="hero-title"></div>
+                <div class="about-me-heading" id="ui-about-heading">About me:</div>
+                <p class="hero-bio"></p>
+                <div class="btn-group"></div>
             </div>
-        </div>
-        <div class="parentColumn" style="--clr:#0dffef">
-            <div class="column">
-                <h1>Mis hobbies</h1>
-                <ul>
-                    <li>Modelado 3D</li>
-                    <li>Ver películas</li>
-                    <li>Jugar videojuegos</li>
-                    <li>Escuchar música</li>
-                    <li>Ocasionalmente dedicarte al aprendizaje</li>
-                </ul>
-                <figure>
-                    <img src="imgs/blender.png" class="mainImg" alt="Vaquita en Blender">
-                </figure>
-                <span></span>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="two-col">
+            <div>
+                <p id="skills-sub" class="sub" style="margin:0 0 6px"></p>
+                <h2 id="skills-title"></h2>
+                <p id="skills-content" style="margin-top:14px"></p>
             </div>
-        </div>
-        <div class="parentColumn" style="--clr:#CC00FF">
-            <div class="column">
-                <h1>Mis intereses</h1>
-                <ul>
-                    <li>
-                        Programación de aplicaciones web: 
-                        <a href="https://www.freecodecamp.org/">Freecodecamp</a>
-                    </li>
-                    <li>
-                        Desarrollo de aplicaciones móviles con  
-                        <a href="https://reactnative.dev/">React Native</a>
-                    </li>
-                    <li>
-                        Me interesa IoT: <a href="https://www.netacad.com/es/courses/iot">Cursos de Internet de las cosas</a>
-                    </li>
-                </ul>
-                <p>
-                    Mi objetivo es trabajar en una empresa como Huawei para contribuir a proyectos innovadores y, sí, también valoro la estabilidad financiera que una carrera en tecnología puede brindarme. 
-                </p>
-                <figure>
-                    <img src="imgs/web.jpg" class="mainImg" alt="Encendido computadora portátil">
-                    <figcaption>
-                        <a href="https://www.freepik.es/foto-gratis/encendido-computadora-portatil-gris_12661377.htm">Imagen de lucabravo</a> en Freepik
-                    </figcaption>
-                </figure>
-                <span></span>
+            <div>
+                <div class="group">
+                    <h3 id="ui-technical-skills">Technical skills</h3>
+                    <div class="tags"></div>
+                </div>
+                <div class="group">
+                    <h3 id="ui-soft-skills">Soft skills</h3>
+                    <div class="tags"></div>
+                </div>
             </div>
+        </section>
+
+        <!-- Background -->
+        <section id="background">
+            <div class="section-head">
+                <h2 id="ui-bg-title">Selected background</h2>
+            </div>
+            <div class="scroll"></div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <div class="section-head">
+                <h2 id="ui-edu-title">Education and Training</h2>
+            </div>
+            <div class="timeline"></div>
+        </section>
+
+        <!-- Technical Domain -->
+        <section id="technical-domain">
+            <div class="section-head">
+                <h2 id="ui-tech-title">Technical domain</h2>
+            </div>
+            <table class="skills-table"></table>
+        </section>
+
+        <!-- All Projects -->
+        <section id="projects">
+            <div class="section-head">
+                <h2 id="ui-projects-title">All Projects</h2>
+            </div>
+            <div class="scroll"></div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <div class="section-head">
+                <h2 id="ui-exp-title">Selected experience</h2>
+                <p class="sub" id="ui-exp-sub">Professional journey</p>
+            </div>
+            <div class="scroll"></div>
+        </section>
+
+        <!-- Credentials & Aptitudes -->
+        <section class="two-col" id="credentials">
+            <div id="badges">
+                <div class="section-head">
+                    <a href="#" class="credly-link">
+                        <h2 id="ui-badges-title">Badges and Credentials ↗</h2>
+                    </a>
+                </div>
+                <div class="badge-list"></div>
+            </div>
+            <div id="aptitudes">
+                <div class="section-head">
+                    <h2 id="ui-apt-title">Aptitudes</h2>
+                </div>
+                <ul class="list"></ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+            <div class="section-head">
+                <h2 id="ui-certs-title">Certifications</h2>
+            </div>
+            <div class="certs"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container foot">
+            <nav></nav>
+            <p class="copy">&copy; Edwin Salvador Soto Hernandez</p>
         </div>
-    </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
