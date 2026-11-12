@@ -2,6 +2,26 @@ const $ = (sel, root = document) => root.querySelector(sel);
 
 const SUPPORTED_LANGS = ['en', 'es'];
 
+/* ---------- Reveal on scroll (una sola vez por sección) ---------- */
+const revealObserver = 'IntersectionObserver' in window
+  ? new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+  : null;
+
+function markForReveal() {
+  document.querySelectorAll('main > section').forEach(sec => {
+    sec.classList.add('reveal');
+    if (revealObserver) revealObserver.observe(sec);
+    else sec.classList.add('is-visible'); // fallback
+  });
+}
+
 function tag(text, accent = false) {
   return `<span class="tag${accent ? ' accent' : ''}">${text}</span>`;
 }
@@ -192,6 +212,15 @@ async function render(lang) {
 
   // ----- Atributo lang del <html> (accesibilidad/SEO) -----
   document.documentElement.lang = lang;
+  
+    // ----- Re-animación sutil al cambiar idioma -----
+  const main = document.querySelector('main');
+  if (main) {
+    main.classList.remove('lang-refresh');
+    // Forzar reflow para reiniciar la animación
+    void main.offsetWidth;
+    main.classList.add('lang-refresh');
+  }
 
   // ----- Persistencia -----
   try { localStorage.setItem('preferred-lang', lang); } catch (_) { }
@@ -221,4 +250,5 @@ function getInitialLang() {
 }
 
 initLangSwitch();
+markForReveal();  
 render(getInitialLang());

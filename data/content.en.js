@@ -189,8 +189,8 @@ window.SITE_DATA = {
             role: "Data Analytics & Predictive Modeling Collaborator",
             description: "Collaborated on the <i>\"Aquaculture Pond Monitoring System\"</i> project, contributing to data analysis and predictive modeling.",
             tags: ["Python", "IoT"],
-            image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/594029016_1170662435259525_2175653822211450302_n.jpg?stp=dst-jpg_tt6&cstp=mx1500x1000&ctp=s1500x1000&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zoEoxfMyYyoQ7kNvwEaOIIB&_nc_oc=AdprtHqaFkwLxBNX62_5Z4oxz55_MSDhMYHhvvA2jp_Mkf4D12HeCWWQKkLsp8fMm8Q&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=a1aP2BQV_ar1tZnvB1wbvQ&_nc_ss=7b289&oh=00_AQRehINve0ZAneL0DfTLI4HR409GVgaAOuBNPoc6JrTSFA&oe=6AF45F64",
-            link: "#",
+            image: "./assets/img/stem.jpeg",
+            link: "https://www.facebook.com/share/p/1GmPt7rRqH/",
             linkLabel: "Read More"
         },
         {
@@ -207,8 +207,8 @@ window.SITE_DATA = {
             role: "IoT Workshop Instructor & Competition Preparation Lead",
             description: "Led hands-on technology workshops for students, introducing programming, IoT and project development.",
             tags: ["MicroPython", "Linux", "IoT"],
-            image: "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/588499383_1164231315902637_3716685583551534601_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x960&ctp=s1280x960&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=J9Dc5_jTo7oQ7kNvwFf81Dz&_nc_oc=AdpswaqOWfGIRzJmH1yopvvA5vYK-5AbIDI7dVLJLeynOilFkU-xGdhxdASE0lor6RM&_nc_zt=23&_nc_ht=scontent-dfw6-2.xx&_nc_gid=cFNDjLpzGwg_qXNKYwmFBA&_nc_ss=7b289&oh=00_AQSK7CXI8R5-Rq45seLefO7_hnOFHzJEIPVNdKTLUSmD0Q&oe=6AF462D0",
-            link: "#",
+            image: "./assets/img/iot-club.jpeg",
+            link: "https://www.facebook.com/share/p/1FfAqcSGMo/",
             linkLabel: "Read More"
         }
     ],
